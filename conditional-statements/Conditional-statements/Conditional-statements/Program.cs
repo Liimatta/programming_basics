@@ -20,11 +20,11 @@ namespace Conditional_statements
 
             if (evaluatedNumber < 0)
             {
-                Console.WriteLine($"Numero (evaluatedNumber) on negatiivinen");
+                Console.WriteLine($"Numero {evaluatedNumber} on negatiivinen");
             }
             else if (evaluatedNumber > 0)
             {
-                Console.WriteLine($"Numero (evaluatedNumber) on positiivinen");
+                Console.WriteLine($"Numero {evaluatedNumber} on positiivinen");
             }
             
             Console.WriteLine($"Syötetty arvo {userInput}");
