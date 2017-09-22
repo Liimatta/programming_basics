@@ -26,9 +26,12 @@ namespace Conditional_statements
             {
                 Console.WriteLine($"Numero {evaluatedNumber} on positiivinen");
             }
-            
+            else if (evaluatedNumber == 0)
+            {
+                Console.WriteLine($"Numero 0 on 0");
+            }
+
             Console.WriteLine($"Syötetty arvo {userInput}");
-            Console.WriteLine("Syötit {0}",userInput);
             Console.ReadKey();
             
         }
