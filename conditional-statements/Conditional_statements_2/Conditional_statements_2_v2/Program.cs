@@ -22,43 +22,44 @@ namespace Conditional_statements_2_v2
             String userInput2;
             userInput2 = Console.ReadLine();
 
-            int b;
-            int.TryParse(userInput2, out b);
+            char b;
+            char.TryParse(userInput2, out b);
 
             Console.WriteLine("Oletko varusmies? y/n");
             String userInput3;
             userInput3 = Console.ReadLine();
 
-            int c;
-            int.TryParse(userInput3, out c);
+            char c;
+            char.TryParse(userInput3, out c);
 
             Console.WriteLine("Oletko opiskelija? y/n");
             String userInput4;
             userInput4 = Console.ReadLine();
 
-            int d;
-            int.TryParse(userInput4, out d);
+            char d;
+            char.TryParse(userInput4, out d);
 
             if (a < 7)
                 Console.WriteLine("0e");
 
-            else if (b == 1 && d == 1)
-                Console.WriteLine("-60%");
+            else if (b == 'y' && d == 'y')
+                Console.WriteLine("Alennus-%  -60%  Hinta  6,40e");
 
             else if (a > 7 && a < 15)
-                Console.WriteLine("-50%");
+                Console.WriteLine("Alennus-%  -50%  Hinta  8.00e");
             else if (a > 65)
-                Console.WriteLine("-50%");
+                Console.WriteLine("Alennus-%  -50%  Hinta  8.00e");
 
-            else if (c == 1)
-                Console.WriteLine("-50%");
+            else if (c == 'y')
+                Console.WriteLine("Alennus-%  -50%  Hinta  8.00e");
 
-            else if (d == 1)
-                Console.WriteLine("-45");
-            else if (b == 1)
-                Console.WriteLine("-15%");
+            else if (d == 'y')
+                Console.WriteLine("Alennus-%  -45%  Hinta  8.80e");
+
+            else if (b == 'y')
+                Console.WriteLine("Alennus-%  -15%  Hinta  13,60e");
             else
-                Console.WriteLine("16e");
+                Console.WriteLine("Hinta  16e");
 
             Console.ReadKey();
         }
