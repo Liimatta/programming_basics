@@ -10,10 +10,9 @@ namespace Loop_Statements_4._4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Let's flip a coin 10000 times");
+            Console.WriteLine("Montako kertaa kolikkoa heitetään?");
 
-            string userinput1;
-            userinput1 = Console.ReadLine();
+            int k = Convert.ToInt32(Console.ReadLine());
 
             Random r = new Random();
             int klaava = 0;
@@ -22,24 +21,25 @@ namespace Loop_Statements_4._4
             
 
             
-            for (int i = 0; i< 5; i++)
+            for (int i = 0; i<k; i++)
             {
-                result = Rand.Next(0, 2);
+                result = r.Next(0, 2);
                 if (result == 1)
                 {
-                    heads++;
+                    kruuna++;
                 }
                 else
                 {
-                    tails++;
+                    klaava++;
                 }
             }
-            Console.WriteLine("heads was flipped {0} times",heads);
-            Console.WriteLine("tails was flipped {0} times", tails);
-            return result;
+            Console.WriteLine("Kruuna heitettiin {0} kertaa", kruuna);
+            Console.WriteLine("Klaava heitettiin {0} kertaa", klaava);
+
+            Console.ReadKey();
 
 
-
+            //Janne L
         }
         
     }
