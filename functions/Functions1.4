@@ -3,27 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Functions_1._4
-{
-    class Program
+namespace Functions_1._42
     {
-        static void Main(string[] args)
+        class Program
         {
-            Console.WriteLine("Syötä 10 positiivista lukua");
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Syötä 10 positiivista lukua");
 
             xx();
+                
+                Console.ReadLine();
+            }
 
-            Console.ReadLine();
-        }
-
-        static void xx()
-        {
+            static void xx()
+            {
             string input = "";
             int maxNumber = 0;
             int maxNumberIndex = 0;
             string output = "";
-            for (int i = 1; i <= 10; i++)
-            {
+            for (int i = 1; i <= 10; i++) {
                 Console.Write($"{i}. ");
                 input = Console.ReadLine();
                 int n = Convert.ToInt32(input);
@@ -42,13 +41,13 @@ namespace Functions_1._4
                     //output += string.Format("{0} ", n);
                     output += $"{n} ";
                 }
-
+                
             }
             Console.WriteLine($"Syötit suraavat luvut:\n{output}\n");
-            Console.WriteLine($"Suurin {maxNumber} oli {maxNumberIndex}. luku");
-        }
+            Console.WriteLine($"Suurin {maxNumber} oli {maxNumberIndex}. luku");                    
+            }
 
+        }
     }
-}
 
 
